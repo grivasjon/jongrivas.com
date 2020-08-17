@@ -5,11 +5,20 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "refresh-pems": "yarn prepare-pems --region us-east-2 --userPoolId us-east-2_cdU7bT1WV"
   },
   "dependencies": {
+    "@aws-amplify/auth": "^3.3.4",
+    "@aws-amplify/core": "^3.4.5",
+    "aws-cognito-next": "^3.0.0",
     "next": "9.5.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "@types/react": "^16.9.46",
+    "typescript": "^3.9.7"
   }
 }
