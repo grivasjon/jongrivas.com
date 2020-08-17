@@ -6,7 +6,7 @@ module.exports = (phase) => {
       return {
         // environment varibales for local development
         env: {
-          IDP_DOMAIN: "jongrivas.auth.us-east-2.amazoncognito.com",
+          IDP_DOMAIN: "dev-jongrivas.auth.us-east-2.amazoncognito.com",
           USER_POOL_ID: "us-east-2_cdU7bT1WV",
           USER_POOL_CLIENT_ID: "27oaa5f8998rrpquhf9u79imp",
           REDIRECT_SIGN_IN: "http://localhost:3000/token",
@@ -18,12 +18,12 @@ module.exports = (phase) => {
       return {
         // environment varibales for production
         env: {
-          IDP_DOMAIN: "",
-          USER_POOL_ID: "",
-          USER_POOL_CLIENT_ID: "",
-          REDIRECT_SIGN_IN: "",
-          REDIRECT_SIGN_OUT: "",
-          AUTH_COOKIE_DOMAIN: "",
+          IDP_DOMAIN: "jongrivas.auth.us-east-2.amazoncognito.com",
+          USER_POOL_ID: "us-east-2_hhB2d3kYM",
+          USER_POOL_CLIENT_ID: "4ajip6qtbar2q8un8goqc2anju",
+          REDIRECT_SIGN_IN: "https://jongrivas.com/token",
+          REDIRECT_SIGN_OUT: "https://jongrivas.com/",
+          AUTH_COOKIE_DOMAIN: "jongrivas.com",
         },
       };
   }
